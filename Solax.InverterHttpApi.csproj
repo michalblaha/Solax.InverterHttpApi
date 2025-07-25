@@ -1,18 +1,25 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <Version>0.9.0.0</Version>
-    <Authors>Michal Blaha</Authors>
-    <PackageId>Solax.InverterHttpApi</PackageId>
-    <Title>Solax Inverter HTTP API</Title>
-    <Description>.NET 8 library for reading and decoding real-time data from Solax inverter HTTP API dongles.</Description>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/michalblaha/Solax.InverterHttpApi</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/michalblaha/Solax.InverterHttpApi</RepositoryUrl>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<Version>0.9.0</Version>
+		<Authors>Michal Bláha</Authors>
+		<Company>Devmasters s.r.o.</Company>
+		<Copyright>Copyright (c) Devmasters, Michal Bláha</Copyright>
+		<PackageId>Solax.InverterHttpApi</PackageId>
+		<Title>Solax Inverter HTTP API</Title>
+		<Description>.NET 8 library for reading and decoding real-time data from Solax inverter HTTP API dongles. Provides strongly-typed access to inverter data, including battery, panel, and grid metrics, with multi-language support.</Description>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageProjectUrl>https://github.com/michalblaha/Solax.InverterHttpApi</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/michalblaha/Solax.InverterHttpApi</RepositoryUrl>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="README.md" Pack="true" PackagePath="\"/>
+	</ItemGroup>
 
 </Project>
