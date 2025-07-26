@@ -12,7 +12,7 @@ namespace Solax.InverterHttpApi
     {
         public static async Task<SolaxDataRaw?> GetDataAsync(            
             string dongleUrl, string password,
-            SolaxDataList.Lang lang = SolaxDataList.Lang.English
+            SolaxData.Lang lang = SolaxData.Lang.English
             )
         {
             return await GetDataAsync(new Uri(dongleUrl), password);

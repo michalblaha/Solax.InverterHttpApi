@@ -1,6 +1,6 @@
 # Solax.InverterHttpApi
 
-A .NET 8 library for reading and decoding real-time data from Solax inverter HTTP API dongles. It provides strongly-typed access to inverter data, including battery, panel, and grid metrics, with multi-language support.
+A .NET 8 library for reading and decoding real-time data from Solax inverter **SOLAX X3 Hybrid G4** with WiFi dongle and HTTP API. It provides strongly-typed access to inverter data, including battery, panel, and grid metrics, with multi-language support.
 
 ## Features
 - Async API for reading inverter data via HTTP

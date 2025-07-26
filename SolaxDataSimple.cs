@@ -8,15 +8,15 @@ namespace Solax.InverterHttpApi
 {
     public class SolaxDataSimple
     {
-        public SolaxDataSimple(SolaxDataList result)
+        public SolaxDataSimple(SolaxData result)
         {
-            PVAllPower = result.GetValue(SolaxDataList.Parameter.AllPanelPower).Value;
-            PV1Power = result.GetValue(SolaxDataList.Parameter.PV1Power).Value;
-            PV2Power = result.GetValue(SolaxDataList.Parameter.PV2Power).Value;
-            BatteryPower = result.GetValue(SolaxDataList.Parameter.BatteryPower).Value;
-            BatteryRemainingCapacity = result.GetValue(SolaxDataList.Parameter.BatteryRemainingCapacity).Value;
+            PVAllPower = result.GetValue(SolaxData.Parameter.AllPanelPower).Value;
+            PV1Power = result.GetValue(SolaxData.Parameter.PV1Power).Value;
+            PV2Power = result.GetValue(SolaxData.Parameter.PV2Power).Value;
+            BatteryPower = result.GetValue(SolaxData.Parameter.BatteryPower).Value;
+            BatteryRemainingCapacity = result.GetValue(SolaxData.Parameter.BatteryRemainingCapacity).Value;
             //PowerNow = result.PowerNow.Value;
-            ExportedPower = result.GetValue(SolaxDataList.Parameter.ExportedPower).Value; ;
+            ExportedPower = result.GetValue(SolaxData.Parameter.ExportedPower).Value; ;
         }
 
         public decimal PVAllPower { get; set; }

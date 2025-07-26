@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static Solax.InverterHttpApi.SolaxDataList;
+using static Solax.InverterHttpApi.SolaxData;
 
 namespace Solax.InverterHttpApi
 {

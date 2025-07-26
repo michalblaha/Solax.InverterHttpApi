@@ -4,13 +4,16 @@
 		<TargetFramework>net8.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
-		<Version>0.9.0</Version>
+		<Version>0.9.1</Version>
 		<Authors>Michal Bláha</Authors>
 		<Company>Devmasters s.r.o.</Company>
 		<Copyright>Copyright (c) Devmasters, Michal Bláha</Copyright>
 		<PackageId>Solax.InverterHttpApi</PackageId>
 		<Title>Solax Inverter HTTP API</Title>
-		<Description>.NET 8 library for reading and decoding real-time data from Solax inverter HTTP API dongles. Provides strongly-typed access to inverter data, including battery, panel, and grid metrics, with multi-language support.</Description>
+		<Description>.NET 8 library for reading and decoding real-time data from Solax SOLAX X3 Hybrid G4 inverter HTTP API dongles. Provides strongly-typed access to inverter data, including battery, panel, and grid metrics, with multi-language support.</Description>
+		<PackageReleaseNotes>
+		Introduced SolaxInformation class for inverter metadata.
+		</PackageReleaseNotes>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageProjectUrl>https://github.com/michalblaha/Solax.InverterHttpApi</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/michalblaha/Solax.InverterHttpApi</RepositoryUrl>

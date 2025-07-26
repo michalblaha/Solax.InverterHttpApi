@@ -8,13 +8,15 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Solax.InverterHttpApi
 {
-    public class SolaxDataList
+    public class SolaxData
     {
         public SolaxDataRaw? RawData { get; }
         public Lang Language { get; }
         Dictionary<int, SolaxValue> decoded = null;
 
-        public SolaxDataList(SolaxDataRaw? rawData, SolaxDataList.Lang language)
+        public SolaxInformation Information { get;set;}
+
+        public SolaxData(SolaxDataRaw? rawData, SolaxData.Lang language)
         {
             this.RawData = rawData;
             this.Language = language;
@@ -37,6 +39,9 @@ namespace Solax.InverterHttpApi
         {
             if (RawData == null)
                 throw new InvalidOperationException("Data property cannot be null.");
+
+            this.Information = new SolaxInformation(this.RawData);
+
             var result = new Dictionary<int, SolaxValue>(200);
 
             Add(result, 0, UnitsEnum.V, OperationsEnum.div10);
