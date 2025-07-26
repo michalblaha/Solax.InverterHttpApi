@@ -31,6 +31,9 @@ Console.WriteLine(batteryPower);
 ## Supported Parameters
 See `SolaxDataList.Parameter` enum for all supported metrics (e.g., BatteryPower, ExportedPower, NetworkVoltagePhase1, etc).
 
+## Credits
+Based on the work of [Pavel Riedl](https://github.com/xPaRi) and his  [SolaxBase library](https://github.com/xPaRi/SolaxBase).
+
 ## License
 MIT (see repository for details)
 
